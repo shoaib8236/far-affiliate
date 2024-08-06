@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../../app-ui/Header/Header";
 import Button from "../../app-ui/Button/Button";
+import AffiliateEstablishmentCard from "../../app-ui/AffiliateEstablishmentCard/AffiliateEstablishmentCard";
+import IncomeStatsCard from "../../app-ui/IncomeStatsCard/IncomeStatsCard";
 
 const Dashboard = () => {
   return (
@@ -14,6 +16,19 @@ const Dashboard = () => {
           <Button padding="px-8">Payout request</Button>
         </div>
       </Header>
+      <div className="p-2 flex">
+        <div className="flex-1 p-[10px]">
+          <AffiliateEstablishmentCard />
+        </div>
+        <div className="flex-1 max-w-[400px] p-[10px]">
+          <IncomeStatsCard />
+          <div className="py-1">
+            <h3 className="text-lg font-medium">
+              Top Performing Establishments
+            </h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
