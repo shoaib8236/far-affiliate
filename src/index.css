@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* responsive heading sizes h1 to h4 screen sm to lg */
+
+  * {
+    @apply sm:text-sm md:text-base;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    @apply mb-3;
+  }
+
+  button {
+    @apply outline-none border-none;
+  }
+
+  h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h2 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  h3 {
+    @apply text-lg md:text-xl lg:text-xl;
+  }
+
+  /* utilities */
+
+  .hide-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  .far-gap-xs {
+    @apply gap-1;
+  }
+
+  .far-gap-sm {
+    @apply gap-2;
+  }
+
+  .far-gap-md {
+    @apply gap-4;
+  }
+
+  .far-gap-lg {
+    @apply gap-6;
+  }
+
+  /* dropdown style */
+
+  .dropdown-wrapper {
+    @apply shadow-lg bg-white rounded-lg overflow-hidden;
+  }
+
+  /* menu style */
+
+  .menu-link-style {
+    @apply py-2 px-4 hover:text-white hover:bg-primary rounded-lg my-1 font-medium;
+  }
+  .menu-link-style.active {
+    @apply text-white bg-primary;
+  }
+
+  /* utilities end */
+
+  /* antd design styles */
+
+  /* antd form label */
+
+  .fc-style-placeholder input::placeholder {
+    @apply text-xl italic placeholder-[#c0c0c0];
+  }
+
+  .label-medium .ant-form-item-label label {
+    @apply font-medium;
+  }
+
+  .label-semibold .ant-form-item-label label {
+    @apply font-semibold;
+  }
+
+  .hide-label .ant-form-item-label label {
+    @apply opacity-0;
+  }
+
+  .hide-form-required-mark .ant-form-item-required {
+    @apply before:hidden !important;
+  }
+
+  /* antd form label end */
+
+  /* input */
+
+  .styled-input,
+  .styled-input.addon-style .ant-input-wrapper,
+  .styled-input.addon-style .ant-input-wrapper .ant-input {
+    @apply border-gray-200 w-full h-[40px] hover:border-gray-200 focus:border-primary;
+  }
+
+  .styled-input .ant-input-group-addon {
+    @apply border-gray-200 bg-[#E6E6E6] text-gray-500 font-semibold !important;
+  }
+
+  .styled-input.ant-input-affix-wrapper {
+    @apply hover:border-gray-200;
+  }
+  .styled-input.ant-input-affix-wrapper-focused {
+    @apply border-primary !important;
+  }
+
+  .styled-input.ant-input-group-wrapper .ant-input-wrapper,
+  .styled-input.ant-input-group-wrapper .ant-input-wrapper .ant-input {
+    @apply h-full border-gray-200;
+  }
+
+  .styled-input.ant-input-group-wrapper .ant-input-wrapper .ant-input:focus {
+    @apply border-primary !important;
+  }
+
+  /* end of input */
+
+  /* textarea */
+
+  textarea.styled-textarea {
+    @apply border-gray-200 hover:border-gray-200 focus:border-primary;
+  }
+
+  /* end of textarea */
+
+  /* date picker */
+
+  .styled-date.ant-picker {
+    @apply w-full h-[40px] border-gray-200;
+  }
+  .styled-date.ant-picker.ant-picker-focused {
+    @apply border-primary !important;
+  }
+
+  /* end of date picker */
+
+  /* ant form error */
+
+  .ant-form-item .ant-form-item-control .ant-form-item-explain-error {
+    @apply text-danger absolute text-xs;
+  }
+
+  .ant-form-item
+    .ant-form-item-control
+    .ant-form-item-control-input
+    .ant-input-status-error {
+    @apply border-danger hover:border-danger focus:border-danger;
+  }
+
+  /* end of ant form error */
+
+  /* antd design styles end */
+}
