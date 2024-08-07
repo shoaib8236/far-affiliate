@@ -33,11 +33,11 @@ const Login = () => {
         />
       </div>
       <div className="flex-1 center h-full flex flex-col overflow-hidden">
-        <div className="flex-grow overflow-auto w-full flex justify-center">
-          <div className="rounded-lg p-6 w-full max-w-[480px]">
+        <div className="flex overflow-auto w-full">
+          <div className="rounded-lg p-6 w-full max-w-[480px] mx-auto">
             <div className="col-center far-gap-md">
               <img className="w-[240px]" src={Logo} alt="logo" />
-              <h2 className="my-10">Affiliate Portal</h2>
+              <h2 className="my-10 font-medium">Affiliate Portal</h2>
 
               {isVerification && isQrCode ? (
                 <div>

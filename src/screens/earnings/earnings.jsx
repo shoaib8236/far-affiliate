@@ -1,9 +1,33 @@
-import React from "react";
-import Header from "../../app-ui/Header/Header";
+import React, { useState } from "react";
 import Avatar from "../../app-ui/Avatar/Avatar";
 import Button from "../../app-ui/Button/Button";
+import Header from "../../app-ui/Header/Header";
+import StripeConnectionModal from "../../app-ui/StripeConnectionModal/StripeConnectionModal";
+import WithdrawAlertModal from "../../app-ui/WithdrawAlertModal/WithdrawAlertModal";
+import WithdrawModal from "../../app-ui/WithdrawModal/WithdrawModal";
 
 const Earnings = () => {
+  const [stripeModal, setStripeModal] = useState(false);
+  const [withdrawAlertModal, setWithdrawAlertModal] = useState(false);
+  const [withdrawModal, setWithdrawModal] = useState(false);
+
+  const toggleConnect = () => {
+    setStripeModal(!stripeModal);
+  };
+
+  const onOpenWithdrawAlertModal = () => {
+    setWithdrawAlertModal(true);
+  };
+
+  const onCloseWithdrawAlertModal = () => {
+    setWithdrawAlertModal(false);
+    setWithdrawModal(true);
+  };
+
+  const onCloseWithdrawModal = () => {
+    setWithdrawModal(false);
+  };
+
   return (
     <div className="flex-grow flex flex-col overflow-hidden">
       <Header title={"Earnings"}></Header>
@@ -24,7 +48,14 @@ const Earnings = () => {
                 </div>
               </div>
               <div className="flex justify-end">
-                <Button size="sm">Withdraw</Button>
+                <Button
+                  onClick={
+                    item === 2 ? toggleConnect : onOpenWithdrawAlertModal
+                  }
+                  size="sm"
+                >
+                  Withdraw
+                </Button>
               </div>
             </div>
           ))}
@@ -52,6 +83,16 @@ const Earnings = () => {
           </div>
         </div>
       </div>
+      <StripeConnectionModal open={stripeModal} onClose={toggleConnect} />
+      <WithdrawAlertModal
+        open={withdrawAlertModal}
+        onClose={onCloseWithdrawAlertModal}
+      />
+      <WithdrawModal
+        open={withdrawModal}
+        onClose={onCloseWithdrawModal}
+        width={500}
+      />
     </div>
   );
 };

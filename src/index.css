@@ -246,5 +246,11 @@
 
   /* end of ant form error */
 
+  /* antd modal styles */
+
+  .styled-modal.ant-modal .ant-modal-content {
+    @apply rounded-[20px];
+  }
+
   /* antd design styles end */
 }
