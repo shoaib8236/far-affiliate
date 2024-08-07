@@ -39,8 +39,8 @@ const Step1 = () => {
           </Form.Item>
           <p className="max-w-[300px] text-sm">
             You can change it later, but this will be used on your outbound
-            marketing channels from out Foodchoo Affiliate platform. Your
-            Prospects and Customers will see the image <br />{" "}
+            marketing channels from out Find a Recruiter Affiliate platform.
+            Your Prospects and Customers will see the image <br />{" "}
             <span className="text-primary text-md">JPG, PNG, 1mb maximum</span>
           </p>
         </div>

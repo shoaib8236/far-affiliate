@@ -16,6 +16,9 @@ import Setting from "../screens/setting/setting";
 import Chat from "../screens/chat/chat";
 import Dashboard from "../screens/dashboard/dashboard";
 import Earnings from "../screens/earnings/earnings";
+import Invite from "../screens/invite/invite";
+import ManageEstablishments from "../screens/manageEstablishments/manageEstablishments";
+import ChatEstablishment from "../screens/chatEstablishment/chatEstablishment";
 
 const AppRoutes = () => {
   const routes = [
@@ -50,8 +53,20 @@ const AppRoutes = () => {
           element: <Dashboard />,
         },
         {
+          path: "chat-establishment",
+          element: <ChatEstablishment />,
+        },
+        {
+          path: "manage-establishment",
+          element: <ManageEstablishments />,
+        },
+        {
           path: "earnings",
           element: <Earnings />,
+        },
+        {
+          path: "invite",
+          element: <Invite />,
         },
         {
           path: "support-chat",

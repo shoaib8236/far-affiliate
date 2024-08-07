@@ -56,9 +56,6 @@ const SideMenu = () => {
         <NavLink to={"/manage-establishment"} className={"menu-link-style"}>
           Mange Establishment
         </NavLink>
-        <NavLink to={"/payments"} className={"menu-link-style"}>
-          Payments
-        </NavLink>
         <NavLink to={"/invite"} className={"menu-link-style"}>
           Invite
         </NavLink>

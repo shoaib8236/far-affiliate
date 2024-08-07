@@ -88,7 +88,7 @@ const Button = ({
         case "lg":
           return "px-8";
         case "md":
-          return "px-4";
+          return "px-6";
         case "sm":
           return "px-3";
         case "xs":
@@ -104,7 +104,9 @@ const Button = ({
         case "lg":
           return iconStyle ? "min-w-12 w-12 h-12" : "h-[48px] min-w-max";
         case "md":
-          return iconStyle ? "min-w-10 w-10 h-10" : "h-[40px] min-w-max";
+          return iconStyle
+            ? "min-w-[34px] w-[34px] h-[34px]"
+            : "h-[34px] min-w-max";
         case "sm":
           return iconStyle ? "min-w-8 w-8 h-8" : "h-[35px] text-sm min-w-max";
         case "xs":

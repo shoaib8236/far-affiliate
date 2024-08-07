@@ -101,11 +101,11 @@ const Signup = () => {
                   </h1>
                 </div>
                 <p className="font-medium">
-                  There's Terms and Conditions in becoming a FoodChoo Affiliate
-                  that you must agree to. But essentially; Every restaurant
-                  Establishment you signup on your unique link, you'll earn a
-                  micropayment on every transaction performed through FoodChoo's
-                  platform.
+                  There's Terms and Conditions in becoming a Find a Recruiter
+                  Affiliate that you must agree to. But essentially; Every
+                  restaurant Establishment you signup on your unique link,
+                  you'll earn a micropayment on every transaction performed
+                  through Find a Recruiter's platform.
                 </p>
               </div>
             </div>

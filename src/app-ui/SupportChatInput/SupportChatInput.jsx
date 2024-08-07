@@ -28,7 +28,7 @@ const SupportChatInput = (props) => {
   }, []);
 
   return (
-    <div className="flex items-center space-x-2 pr-5 border bg-white shadow-input rounded-lg">
+    <div className="flex items-center space-x-2 pr-5 border bg-white shadow-input rounded-lg min-h-[44px]">
       <TextArea
         ref={inputRef}
         value={message}
