@@ -16,6 +16,10 @@ export default {
         yellow: "#f4b63e",
         dark: "#21082d",
       },
+      boxShadow: {
+        "theme-1": "0px 0px 10px #d4d4d475",
+        input: "0px 4px 14px #dedede",
+      },
     },
 
     screens: {

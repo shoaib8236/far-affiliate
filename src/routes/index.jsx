@@ -15,6 +15,7 @@ import Step3 from "../screens/signup/steps/step3";
 import Setting from "../screens/setting/setting";
 import Chat from "../screens/chat/chat";
 import Dashboard from "../screens/dashboard/dashboard";
+import Earnings from "../screens/earnings/earnings";
 
 const AppRoutes = () => {
   const routes = [
@@ -47,6 +48,10 @@ const AppRoutes = () => {
         {
           path: "dashboard",
           element: <Dashboard />,
+        },
+        {
+          path: "earnings",
+          element: <Earnings />,
         },
         {
           path: "support-chat",

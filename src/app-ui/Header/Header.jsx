@@ -7,7 +7,7 @@ const Header = (props) => {
   // back button missing
 
   return (
-    <div className="h-[77px] bg-[#212121] bg-opacity-5 flex justify-between items-center px-6 shadow w-full">
+    <div className="min-h-[77px] bg-[#212121] bg-opacity-5 flex justify-between items-center px-6 shadow w-full">
       <h3 className="mb-0 leading-none text-2xl font-semibold">{title}</h3>
       {children}
     </div>
